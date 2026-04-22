@@ -13,10 +13,13 @@
   "jest": {
     "reporters": [
       "default",
-      ["jest-html-reporter", {
-        "pageTitle": "UI Automation Test Report",
-        "outputPath": "docs/test-report.html"
-      }]
+      [
+        "jest-html-reporter",
+        {
+          "pageTitle": "UI Automation Test Report",
+          "outputPath": "docs/test-report.html"
+        }
+      ]
     ]
   },
   "keywords": [],
@@ -25,7 +28,11 @@
   "type": "commonjs",
   "devDependencies": {
     "axios": "^1.15.2",
+    "chromedriver": "^147.0.4",
+    "geckodriver": "^6.1.0",
     "jest": "^30.3.0",
-    "jest-html-reporter": "^4.4.0"
+    "jest-html-reporter": "^4.4.0",
+    "nightwatch": "^3.15.0",
+    "selenium-server": "^3.141.59"
   }
 }
