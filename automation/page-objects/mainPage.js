@@ -1,8 +1,13 @@
 module.exports = {
   url: 'http://localhost:3000',
   elements: {
-    walletConnectButton: 'button[data-testid="wallet-connect"]',
-    mainLogo: 'img[alt="Logo"]',
+    // The Connect Wallet button is inside Navbar, without a specific data-testid.
+    // It contains the text "Connect Wallet".
+    walletConnectButton: {
+      selector: '//button[contains(text(), "Connect Wallet")]',
+      locateStrategy: 'xpath'
+    },
+    mainLogo: 'nav a[href="/"]',
     heroImage: 'img[alt="Real Estate"]'
   }
 };
