@@ -20,6 +20,26 @@ module.exports = {
         'goog:chromeOptions': {
           args: ['--headless']
         }
+      },
+      screenshots: {
+        enabled: true,
+        on_failure: true,
+        path: 'docs/screenshots'
+      }
+    },
+    firefox: {
+      webdriver: {
+        start_process: true,
+        server_path: 'node_modules/.bin/geckodriver',
+        port: 4444
+      },
+      desiredCapabilities: {
+        browserName: 'firefox'
+      },
+      screenshots: {
+        enabled: true,
+        on_failure: true,
+        path: 'docs/screenshots'
       }
     }
   }
