@@ -10,6 +10,7 @@ module.exports = {
   },
   test_settings: {
     default: {
+      launch_url: 'http://localhost:3000',
       webdriver: {
         start_process: true,
         server_path: 'node_modules/.bin/chromedriver',
