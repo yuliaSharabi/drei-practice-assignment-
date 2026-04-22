@@ -8,7 +8,7 @@
     "server": "node server",
     "preview": "vite preview",
     "prepare": "npm-run-all --parallel server client",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.8",
@@ -38,8 +38,15 @@
     "wagmi": "^2.15.6"
   },
   "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.59.0",
+    "@typescript-eslint/parser": "^8.59.0",
     "@vitejs/plugin-react": "^4.3.3",
     "eslint": "^9.29.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "typescript": "^6.0.3",
     "vite": "^6.0.1"
   }
 }
