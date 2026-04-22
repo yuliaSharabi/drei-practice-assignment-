@@ -5,9 +5,9 @@
 
   <testsuite name="mainPageLoad" id="mainPageLoad"
     errors="0" failures="0" hostname="" package="mainPageLoad" skipped="0"
-    tests="1" time="0.7020" timestamp="">
+    tests="1" time="0.7290" timestamp="">
   
-    <testcase name="Main Page Load Test" classname="mainPageLoad" time="0.7010" assertions="4">
+    <testcase name="Main Page Load Test" classname="mainPageLoad" time="0.6670" assertions="4">
 
     
 

@@ -1,6 +1,10 @@
 const mainPage = browser.page.mainPage();
 
 module.exports = {
+  after: function(browser) {
+    browser.end();
+  },
+
   'Main Page Load Test': function (browser) {
     mainPage
       .navigate()
@@ -9,7 +13,5 @@ module.exports = {
       .assert.visible('@heroImage');
       
     browser.assert.titleContains('DeFi Real Estate');
-    
-    browser.end();
   }
 };
