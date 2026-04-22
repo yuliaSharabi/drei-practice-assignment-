@@ -16,7 +16,7 @@ UI_TEST_001
 4. Key images (e.g., logo, hero image) are loaded and have valid sources.
 
 ## Implementation Details
-- **Tool:** Jest & Playwright (or similar browser driver)
+- **Tool:** Nightwatch.io (Page Object Model)
 - **Reporting:** HTML Report generated at `automation/docs/test-report.html`
 
 ## Steps
