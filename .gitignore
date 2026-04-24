@@ -50,4 +50,6 @@ Thumbs.db
 
 # Project specific
 automation/tests_output/
+automation/docs/screenshots/
+automation/logs/
 
