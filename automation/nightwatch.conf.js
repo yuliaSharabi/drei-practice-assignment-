@@ -27,12 +27,14 @@ module.exports = {
     },
     firefox: {
       webdriver: {
-        start_process: true,
         server_path: 'node_modules/.bin/geckodriver',
         port: 4444
       },
       desiredCapabilities: {
-        browserName: 'firefox'
+        browserName: 'firefox',
+        'moz:firefoxOptions': {
+          args: ['-headless']
+        }
       },
       screenshots: {
         enabled: true,
