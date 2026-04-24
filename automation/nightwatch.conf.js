@@ -41,6 +41,27 @@ module.exports = {
         on_failure: true,
         path: 'docs/screenshots'
       }
+    },
+    chrome_mobile: {
+      webdriver: {
+        start_process: true,
+        server_path: 'node_modules/.bin/chromedriver',
+        port: 9515
+      },
+      desiredCapabilities: {
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+          args: ['--headless'],
+          mobileEmulation: {
+            deviceName: 'Pixel 4'
+          }
+        }
+      },
+      screenshots: {
+        enabled: true,
+        on_failure: true,
+        path: 'docs/screenshots'
+      }
     }
   }
 };
